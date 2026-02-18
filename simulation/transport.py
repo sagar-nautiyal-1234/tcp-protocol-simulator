@@ -1,12 +1,11 @@
-import threading
-import time
+import threading,time
 
 class Transport:
-    def __init__(self, deliver_callback):
-        self.deliver = deliver_callback
+    def __init__(self,deliver):
+        self.deliver=deliver
 
-    def send(self, packet):
-        def delayed():
+    def send(self,pkt):
+        def run():
             time.sleep(0.6)
-            self.deliver(packet)
-        threading.Thread(target=delayed, daemon=True).start()
+            self.deliver(pkt)
+        threading.Thread(target=run,daemon=True).start()

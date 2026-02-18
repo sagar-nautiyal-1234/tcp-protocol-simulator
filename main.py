@@ -9,10 +9,9 @@ root.withdraw()
 
 engine = ProtocolEngine()
 
-client = ClientWindow(engine)
-server = ServerWindow(engine)
-visual = VisualizerWindow(engine)
+ClientWindow(engine)
+ServerWindow(engine)
+VisualizerWindow(engine)
 
 engine.start()
-
-client.mainloop()
+root.mainloop()
