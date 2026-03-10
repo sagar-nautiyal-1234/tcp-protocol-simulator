@@ -10,8 +10,7 @@ class ClientWindow(tk.Toplevel):
         self.configure(bg=BG)
         self.title("CLIENT")
         self.geometry("420x500")
-        # self.resizable(False, False)
-
+        
         # Header
         header = tk.Label(self, text="CLIENT", bg=BG, fg=FG,
                           font=("Consolas", 18, "bold"))

@@ -9,7 +9,7 @@ class VisualizerWindow(tk.Toplevel):
         self.configure(bg=BG)
         self.title("VISUALIZER")
         self.geometry("650x350")
-        # self.resizable(False, False)
+        
 
         self.canvas = tk.Canvas(
             self,

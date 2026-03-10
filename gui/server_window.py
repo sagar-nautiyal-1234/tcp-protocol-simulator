@@ -9,7 +9,7 @@ class ServerWindow(tk.Toplevel):
         self.configure(bg=BG)
         self.title("SERVER")
         self.geometry("420x450")
-        # self.resizable(False, False)
+        
 
         # Header
         header = tk.Label(
